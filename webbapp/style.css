@@ -1,0 +1,183 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+ 
+    height: 100vh;
+    background-color: lemonchiffon;
+    overflow: hidden;
+}
+
+#users {
+	height: 95vh;
+	width: 20vw;
+	overflow-y: scroll;
+	background-color: black;
+	margin-right: 5px;
+}
+
+#content {
+    height: 95vh;
+    width: 85vw;
+    background-color: black;
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    gap: 10px;
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.imgBox {
+	height: 200px;
+	width: 200px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	background-color: white;
+    margin-left: 10px;
+}
+
+.friendBox {
+	height: 200px;
+	width: 200px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	background-color: white;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.favorite {
+    border: 2px solid green;
+}
+
+.jointPic {
+    border: 2px solid red;
+}
+
+span {
+    font-weight: bold;
+}
+
+img{
+    width: 80%;
+    height: 90%;
+}
+
+.addButton {
+    z-index: 2;
+    margin-bottom: -9px;
+}
+
+.removeButton {
+    z-index: 2;
+    margin-bottom: -10px;
+}
+
+.errorText {
+	z-index: 5;
+	border: none;
+	position: relative;
+	background-color: burlywood;
+    color: black;
+    font-weight: bold;
+	top: -11px;
+}
+
+.fetchingUsers {
+    z-index: 2;
+    height: 200vh;
+    width: 100%;
+    opacity: 90%;
+    background-color: gray;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fetchingPics {
+    z-index: 2;
+    height: 95vh;
+    width: 85vw;
+    opacity: 90%;
+    background-color: gray;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fetching {
+    z-index: 2;
+    height: 95vh;
+    width: 85vw;
+    opacity: 90%;
+    background-color: gray;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.updatingDB {
+    z-index: 1;
+    height: 200px;
+    width: 200px;
+    opacity: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: gray;
+    position: absolute;
+}
+
+.hide {
+    display: none;
+}
+
+.userBox {
+	padding: 15px;
+	margin-top: 3px;
+	background-color: wheat;
+	height: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.userBox:first-child {
+    margin-top: 0px;
+}
+
+.userBox:hover{
+    background-color: white;
+}
+
+.mainUser{
+    background-color: deepskyblue;
+    font-weight: bold;
+}
+
+.selected {
+    background-color: white;
+    font-weight: bold;
+}
+
+
+
